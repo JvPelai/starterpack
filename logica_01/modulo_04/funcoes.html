@@ -1,0 +1,32 @@
+<meta charset="utf-8">
+<script>
+	function pulaLinha(){
+		document.write("<br>");
+	}
+	function pula2Linhas(){
+		document.write("<br><br>")
+	}
+
+	function mostra(frase){
+		document.write("<big>" + frase + "</big>");
+	}
+
+	function idadeDosIrmaos(minhaIdade,idadeIrmao){
+		pulaLinha();
+		mostra("Nossa diferença de idade é " + (minhaIdade - idadeIrmao))
+		pulaLinha();
+	}
+
+	idadeDosIrmaos(23,17)
+	/*exemplo básico de funções
+	document.write("Essa é a primeira linha.");
+	pulaLinha();
+	document.write("Eu pulei uma linha. ");
+	pulaLinha();
+	document.write("eu pulei mais uma linha.");
+	pula2Linhas();
+	document.write("agora eu pulei 2 linhas");
+	*/
+
+
+</script>

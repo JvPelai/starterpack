@@ -1,0 +1,19 @@
+<meta charset="utf-8">
+<script>
+	function pulaLinha(){
+		document.write("<br>");
+	}
+	function pula2Linhas(){
+		document.write("<br><br>")
+	}
+
+	function mostra(frase){
+		document.write("<big>" + frase + "</big>");
+	}
+	function geracoes(ano_atual,media){
+		pulaLinha();
+		mostra("Desde 1500, já se passaram " + Math.round(((ano_atual - 1500)/28)) + " gerações.")
+	}
+
+	geracoes(2020,28);
+</script>
