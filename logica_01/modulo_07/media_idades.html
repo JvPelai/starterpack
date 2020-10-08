@@ -1,0 +1,27 @@
+<meta charset="UTF-8">
+
+<h3>Média de idade dos familiares</h3>
+<br>
+<script>
+
+	function pulaLinha() {
+
+    	document.write("<br>");
+    	document.write("<br>");
+	}
+
+	function mostra(frase) {
+
+   		document.write(frase);
+    	pulaLinha();
+	}
+
+    var somaIdades = 0;
+    var qtdFamiliares = parseInt(prompt("Quantos familiares você tem?"));
+    for(let i = 1;i <= qtdFamiliares;i++){
+        idade = parseInt(prompt("Digite a idade do " + i + "º familiar"));
+        somaIdades += idade;
+    }
+    var media = somaIdades/qtdFamiliares;
+    mostra("A média de idade dos seus familiares é: " + media);
+</script>
